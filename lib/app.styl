@@ -1,0 +1,136 @@
+@import 'nib'
+@import url('https://fonts.googleapis.com/css?family=Lato:400,300');
+html
+	margin 0
+body 
+	background-color #ecf5f5
+	color #303030
+	margin 0
+	padding 0
+	font-family: 'Lato', sans-serif;	
+h2
+	font-size 2em
+h3
+	font-size 1.6em
+	font-weight 400
+.nav
+	color #ecf5f5
+	background-color #303030
+	position: fixed
+	height: 70px
+	top 0
+	right 0
+	left 0
+	&-lista
+		list-style: none
+		text-align: center
+		padding 0
+		line-height: 35px
+	&-item
+		display inline-block
+		margin auto
+		margin-right 1.5em
+		margin-left 1.5em
+		font-size 1.3em
+	&-linkItem
+		color #ecf5f5
+		text-decoration: none
+	&-item:nth-child(3)
+		font-size 2em
+	
+.header
+	height 560px
+	padding-top 80px
+	background-color #ecf5f5
+	color #303030
+	display flex
+	flex-direction column
+	justify-content center
+	
+	&-front
+		display flex
+		justify-content center
+		align-items center
+		margin 35px 0
+		&-left
+			flex 0 0 auto
+			margin 0 40px
+		&-logo
+			flex 0 0 auto
+			margin 0 40px
+		&-right
+			flex 0 0 160px
+			margin 0 40px
+			text-align center
+			font-weight 400
+			&-button
+				background-color #007e98
+				border 0
+				color #ecf5f5
+				font-family: 'Lato', sans-serif;
+				padding .5em
+				font-size 1.4em
+				border-radius 3px
+				cursor: pointer
+
+	&-slogan
+		margin 45px 0
+		text-align center
+		font-weight: 300
+		font-size 2.7em
+.services
+	text-align center
+	height 280px
+	background-color #029792
+	display flex
+	flex-direction row
+	justify-content center
+	&-item
+		width:  300px
+		background-color #ecf5f5
+		margin 20px
+		border-radius: 3px
+		box-shadow: 2px 2px 4px #606060
+.jobs
+	height 280px
+	background-color #007e98
+	&-lista
+		text-align center
+		height 100%
+		display flex
+		flex-direction row
+		justify-content center
+		margin 0
+		list-style none
+		padding 0
+	&-item
+		width:  300px
+		background-color #ecf5f5
+		margin 20px
+		border-radius: 3px
+		box-shadow: 2px 2px 4px #606060
+
+.questions
+	height 280px
+	background-color #ecf5f5
+	display flex
+	justify-content column
+	&-input
+		background-color white
+		border none
+		border-radius 2px
+		padding 5px
+		margin 2px 0px
+	&-item
+		margin 10px 50px
+	
+.contact
+	height 280px
+	background-color #ecf5f5
+	box-sizing: border-box
+	border-top 1px solid gray
+	
+.footer
+	height 60px
+	background-color #303030
+	

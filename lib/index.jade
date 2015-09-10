@@ -1,7 +1,48 @@
 <!DOCTYPE html>
-html(lang="en")
-head
-	meta(charset="UTF-8")
-	title GetCyan | GetCyan
-body
-	
+html(lang="es")
+	head
+		meta(charset="UTF-8")
+		title GetCyan | GetCyan
+		link(href='/static/css/app.css', rel='stylesheet')
+	body
+		nav.nav
+			ul.nav-lista
+				li.nav-item: a(href="#header").nav-linkItem Servicios
+				li.nav-item: a(href="#").nav-linkItem Portafolio
+				li.nav-item: a(href="#").nav-linkItem GetCyan
+				li.nav-item: a(href="#").nav-linkItem Consultas
+				li.nav-item: a(href="#").nav-linkItem Contacto
+		header.header#header
+			div.header-front
+				div.header-front-left
+					img(src="/static/img/responsive.png")
+				div.header-front-logo
+					img(src="/static/img/logo.png")
+				div.header-front-right
+					h3 Desarrollo de aplicaciones y sistemas web.
+					input.header-front-right-button(type="button" href="#contact" value="Contacto")
+			h2.header-slogan "Disfrutamos nuestro arte, amamos la tecnologia"
+		section.services
+			div.services-item
+				h2 Diseño
+			div.services-item
+				h2 Desarrollo
+			div.services-item
+				h2 Soporte
+		section.jobs
+			ul.jobs-lista
+				li.jobs-item n
+				li.jobs-item h 
+				li.jobs-item hola
+		section.questions
+			div.questions-item
+				h4 Nombre completo
+				input.questions-input(type="text")
+			div.questions-item
+				h4 Correo electronico
+				input.questions-input(type="text")
+			div.questions-item
+				h4 Consulta
+				input.questions-input(type="box")
+		section.contact#contact
+		footer.footer
