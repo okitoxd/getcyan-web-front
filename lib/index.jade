@@ -6,12 +6,12 @@ html(lang="es")
 		link(href='/static/css/app.css', rel='stylesheet')
 	body
 		nav.nav
+			span.nav-getcyan: a(href="#header").nav-linkItem GetCyan
 			ul.nav-lista
-				li.nav-item: a(href="#header").nav-linkItem Servicios
-				li.nav-item: a(href="#").nav-linkItem Portafolio
-				li.nav-item: a(href="#").nav-linkItem GetCyan
-				li.nav-item: a(href="#").nav-linkItem Consultas
-				li.nav-item: a(href="#").nav-linkItem Contacto
+				li.nav-item: a(href="#services").nav-linkItem Servicios
+				li.nav-item: a(href="#jobs").nav-linkItem Nuestros trabajos
+				li.nav-item: a(href="#blog").nav-linkItem Blog
+				li.nav-item: a(href="#contact").nav-linkItem Contacto
 		header.header#header
 			div.header-front
 				div.header-front-left
@@ -20,29 +20,39 @@ html(lang="es")
 					img(src="/static/img/logo.png")
 				div.header-front-right
 					h3 Desarrollo de aplicaciones y sistemas web.
-					input.header-front-right-button(type="button" href="#contact" value="Contacto")
+					input.header-front-right-button(type="button" url="#contact" value="Contacto")
 			h2.header-slogan "Disfrutamos nuestro arte, amamos la tecnologia"
-		section.services
+		section.services#services
 			div.services-item
 				h2 Diseño
+				p
 			div.services-item
 				h2 Desarrollo
 			div.services-item
 				h2 Soporte
-		section.jobs
+		section.jobs#jobs
 			ul.jobs-lista
-				li.jobs-item n
-				li.jobs-item h 
-				li.jobs-item hola
-		section.questions
-			div.questions-item
-				h4 Nombre completo
-				input.questions-input(type="text")
-			div.questions-item
-				h4 Correo electronico
-				input.questions-input(type="text")
-			div.questions-item
-				h4 Consulta
-				input.questions-input(type="box")
+				li.jobs-item: h2.jobs-item-label Entrevistarte.com
+				li.jobs-item: h2.jobs-item-label  
+				li.jobs-item: h2.jobs-item-label
 		section.contact#contact
+			form.contact-formulario
+				div.contact-formulario-item
+					h4.contact-formulario-label Nombre completo
+					input.contact-formulario-input(type="text")
+				div.contact-formulario-item
+					h4.contact-formulario-label Correo electronico
+					input.contact-formulario-input(type="text")
+				div.contact-formulario-item
+					h4.contact-formulario-label Telefono
+					input.contact-formulario-input(type="text")
+				div.contact-formulario-item
+					h4.contact-formulario-label Consulta
+					textarea.contact-formulario-input(rows="8")
+				div.contact-formulario-item
+					input.header-front-right-button(type="button" value="Enviar")
+			div.contact-redes
+				h2 Nuestras redes sociales
+				
+
 		footer.footer

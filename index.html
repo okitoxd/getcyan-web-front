@@ -6,13 +6,12 @@
     <link href="/static/css/app.css" rel="stylesheet"/>
   </head>
   <body>
-    <nav class="nav">
+    <nav class="nav"><span class="nav-getcyan"><a href="#header" class="nav-linkItem">GetCyan</a></span>
       <ul class="nav-lista">
-        <li class="nav-item"><a href="#header" class="nav-linkItem">Servicios</a></li>
-        <li class="nav-item"><a href="#" class="nav-linkItem">Portafolio</a></li>
-        <li class="nav-item"><a href="#" class="nav-linkItem">GetCyan</a></li>
-        <li class="nav-item"><a href="#" class="nav-linkItem">Consultas</a></li>
-        <li class="nav-item"><a href="#" class="nav-linkItem">Contacto</a></li>
+        <li class="nav-item"><a href="#services" class="nav-linkItem">Servicios</a></li>
+        <li class="nav-item"><a href="#jobs" class="nav-linkItem">Nuestros trabajos</a></li>
+        <li class="nav-item"><a href="#blog" class="nav-linkItem">Blog</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-linkItem">Contacto</a></li>
       </ul>
     </nav>
     <header id="header" class="header">
@@ -21,14 +20,15 @@
         <div class="header-front-logo"><img src="/static/img/logo.png"/></div>
         <div class="header-front-right">
           <h3>Desarrollo de aplicaciones y sistemas web.</h3>
-          <input type="button" href="#contact" value="Contacto" class="header-front-right-button"/>
+          <input type="button" url="#contact" value="Contacto" class="header-front-right-button"/>
         </div>
       </div>
       <h2 class="header-slogan">"Disfrutamos nuestro arte, amamos la tecnologia"</h2>
     </header>
-    <section class="services">
+    <section id="services" class="services">
       <div class="services-item">
         <h2>Diseño</h2>
+        <p></p>
       </div>
       <div class="services-item">
         <h2>Desarrollo</h2>
@@ -37,28 +37,45 @@
         <h2>Soporte</h2>
       </div>
     </section>
-    <section class="jobs">
+    <section id="jobs" class="jobs">
       <ul class="jobs-lista">
-        <li class="jobs-item">n</li>
-        <li class="jobs-item">h </li>
-        <li class="jobs-item">hola</li>
+        <li class="jobs-item">
+          <h2 class="jobs-item-label">Entrevistarte.com</h2>
+        </li>
+        <li class="jobs-item">
+          <h2 class="jobs-item-label"> </h2>
+        </li>
+        <li class="jobs-item">
+          <h2 class="jobs-item-label"></h2>
+        </li>
       </ul>
     </section>
-    <section class="questions">
-      <div class="questions-item">
-        <h4>Nombre completo</h4>
-        <input type="text" class="questions-input"/>
-      </div>
-      <div class="questions-item">
-        <h4>Correo electronico</h4>
-        <input type="text" class="questions-input"/>
-      </div>
-      <div class="questions-item">
-        <h4>Consulta</h4>
-        <input type="box" class="questions-input"/>
+    <section id="contact" class="contact">
+      <form class="contact-formulario">
+        <div class="contact-formulario-item">
+          <h4 class="contact-formulario-label">Nombre completo</h4>
+          <input type="text" class="contact-formulario-input"/>
+        </div>
+        <div class="contact-formulario-item">
+          <h4 class="contact-formulario-label">Correo electronico</h4>
+          <input type="text" class="contact-formulario-input"/>
+        </div>
+        <div class="contact-formulario-item">
+          <h4 class="contact-formulario-label">Telefono</h4>
+          <input type="text" class="contact-formulario-input"/>
+        </div>
+        <div class="contact-formulario-item">
+          <h4 class="contact-formulario-label">Consulta</h4>
+          <textarea rows="8" class="contact-formulario-input"></textarea>
+        </div>
+        <div class="contact-formulario-item">
+          <input type="button" value="Enviar" class="header-front-right-button"/>
+        </div>
+      </form>
+      <div class="contact-redes">
+        <h2>Nuestras redes sociales</h2>
       </div>
     </section>
-    <section id="contact" class="contact"></section>
     <footer class="footer"></footer>
   </body>
 </html>
