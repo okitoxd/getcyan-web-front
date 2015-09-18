@@ -43,12 +43,13 @@ h3
 	&-getcyan
 		margin 0
 		padding 0
+		padding-left 1em
 		width 340px
 		font-size 2em
 		text-align left
 	
 .header
-	height 470px
+	height 500px
 	padding-top 80px
 	background-color #ecf5f5
 	color #303030
@@ -98,6 +99,8 @@ h3
 		width:  300px
 		background-color #ecf5f5
 		margin 20px
+		padding 20px
+		box-sizing border-box
 		border-radius: 3px
 		box-shadow: 2px 2px 4px #606060
 		font-weight 400
@@ -119,11 +122,16 @@ h3
 		margin 20px
 		border-radius: 3px
 		box-shadow: 2px 2px 4px #606060
+		display flex
+		flex-direction column
+		justify-content center
 		&-label
-			padding .3em
-			background-color rgba(gray, .8)
-			position relative
-			bottom 0px
+			background-color #ecf5f5
+			box-shadow: 0px 1px 2px gray
+			padding 10px
+			&-link
+				text-decoration none
+				color #303030
 	&-item:nth-child(1)
 		background-image: url(/static/img/entrevistarte-screenshot.jpg)
 		background-size: cover
@@ -153,9 +161,28 @@ h3
 			margin 5px 50px
 	&-redes
 		width 510px
-		height 30px
+		&-lista
+			list-style none
+			display flex
+			flex-direction row
+			justify-content space-around
+			&-item
+				margin 10px
+		&-label
+			text-align center
+			margin-bottom 1em
+		&-parrafo
+			font-size 1.3rem
+		&-telefono
+			text-align center
 		
 .footer
 	height 60px
 	background-color #303030
-	
+	display flex
+	flex-direction column
+	justify-content center
+	&-parrafo
+		font-size .8rem
+		margin-left 2em
+		color #ecf5f5

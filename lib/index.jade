@@ -25,16 +25,18 @@ html(lang="es")
 		section.services#services
 			div.services-item
 				h2 Diseño
-				p
+				p Estamos inmersos en una buena experiencia de usuario, tenemos el arte en nuestras manos.
 			div.services-item
 				h2 Desarrollo
+				p Pensamos, analisamos y actuamos. Somos desarrolladores de nuevas tecnologias natos.
 			div.services-item
 				h2 Soporte
+				p Nuestros servicios son completos, damos soporte a cualquier equipo o tecnología que lo requiera.
 		section.jobs#jobs
 			ul.jobs-lista
-				li.jobs-item: h2.jobs-item-label Entrevistarte.com
-				li.jobs-item: h2.jobs-item-label  
-				li.jobs-item: h2.jobs-item-label
+				li.jobs-item: a.jobs-item-label-link(href="http://entrevistarte.com", target="_blank"): h2.jobs-item-label entrevistarte.com
+				li.jobs-item: a.jobs-item-label-link(href="#", target="_blank"): h2.jobs-item-label link peru.com
+				li.jobs-item: a.jobs-item-label-link(href="#", target="_blank"): h2.jobs-item-label link getcyanio.com
 		section.contact#contact
 			form.contact-formulario
 				div.contact-formulario-item
@@ -52,7 +54,17 @@ html(lang="es")
 				div.contact-formulario-item
 					input.header-front-right-button(type="button" value="Enviar")
 			div.contact-redes
-				h2 Nuestras redes sociales
+				h2.contact-redes-label Nuestras redes sociales
+				ul.contact-redes-lista
+					li.contact-redes-lista-item: a(href="#", target="_blank"): img(src="/static/img/facebook.png", alt="")
+					li.contact-redes-lista-item: a(href="#", target="_blank"): img(src="/static/img/twitter.png", alt="")
+					li.contact-redes-lista-item: a(href="#", target="_blank"): img(src="/static/img/youtube.png", alt="")
+				h2.contact-redes-label Otras formas
+					p.contact-redes-parrafo Av. Abraham Valdelomar Mz. E Lt. 31
+					div.contact-redes-mapa
+				h3.contact-redes-telefono 931512718
+
 				
 
 		footer.footer
+			p.footer-parrafo Derechos reservados. GetCyan.io
