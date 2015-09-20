@@ -4,7 +4,7 @@ html {
 }
 body {
   background-color: #ecf5f5;
-  color: #303030;
+  color: #202020;
   margin: 0;
   padding: 0;
   font-family: 'Lato', sans-serif;
@@ -19,7 +19,7 @@ h3 {
 }
 .nav {
   color: #ecf5f5;
-  background-color: #303030;
+  background-color: #202020;
   position: fixed;
   height: 50px;
   top: 0;
@@ -49,8 +49,8 @@ h3 {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-  -webkit-box-shadow: 2px 0 3px #303030;
-  box-shadow: 2px 0 3px #303030;
+  -webkit-box-shadow: 2px 0 3px #202020;
+  box-shadow: 2px 0 3px #202020;
 }
 .nav-lista {
   width: 680px;
@@ -96,7 +96,7 @@ h3 {
 .header {
   height: 500px;
   background-color: #ecf5f5;
-  color: #303030;
+  color: #202020;
   margin-top: 50px;
   padding: 40px 0;
   display: -webkit-box;
@@ -343,7 +343,7 @@ h3 {
 }
 .jobs-item-label-link {
   text-decoration: none;
-  color: #303030;
+  color: #202020;
 }
 .jobs-item:nth-child(1) {
   background-image: url("/static/img/entrevistartedotcom.png");
@@ -391,7 +391,7 @@ h3 {
 .contact-formulario-input {
   width: 100%;
   background-color: #fff;
-  border: 1px solid #dee6e6;
+  border: 1px solid #aaa;
   -webkit-border-radius: 2px;
   border-radius: 2px;
   font-size: 1.1em;
@@ -419,15 +419,15 @@ h3 {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: distribute;
-  -moz-box-pack: distribute;
-  -o-box-pack: distribute;
-  -ms-flex-pack: distribute;
-  -webkit-justify-content: space-around;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
 }
 .contact-redes-lista-item {
-  margin: 10px;
+  margin: 10px 30px;
 }
 .contact-redes-label {
   text-align: center;
@@ -441,7 +441,7 @@ h3 {
 }
 .footer {
   height: 60px;
-  background-color: #303030;
+  background-color: #202020;
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
