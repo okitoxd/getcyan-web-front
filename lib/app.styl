@@ -9,7 +9,7 @@ body
 	padding 0
 	font-family: 'Lato', sans-serif;	
 h2
-	font-size 1.7em
+	font-size 2em
 	font-weight 400
 h3
 	font-size 1.6em
@@ -18,7 +18,7 @@ h3
 	color #ecf5f5
 	background-color #303030
 	position: fixed
-	height: 60px
+	height: 50px
 	top 0
 	right 0
 	left 0
@@ -34,8 +34,10 @@ h3
 		margin 0
 		display flex
 		justify-content flex-end
+		box-sizing border-box
+		padding-right .5em
 	&-item
-		font-size 1.3em
+		font-size 1.2em
 		margin auto .7em
 	&-linkItem
 		color #ecf5f5
@@ -43,34 +45,35 @@ h3
 	&-getcyan
 		margin 0
 		padding 0
-		padding-left 1em
+		padding-left .5em
 		width 340px
-		font-size 2em
+		box-sizing border-box
+		font-size 1.7em
 		text-align left
 	
 .header
 	height 500px
-	padding-top 80px
 	background-color #ecf5f5
 	color #303030
+	margin-top 50px
+	padding 40px 0
 	display flex
 	flex-direction column
 	justify-content center
-	
 	&-front
 		display flex
 		justify-content center
 		align-items center
-		margin 35px 0
-		&-left
-			flex 0 0 auto
-			margin 0 40px
+		margin 25px 0
 		&-logo
-			flex 0 0 auto
-			margin 0 40px
-		&-right
-			flex 0 0 160px
-			margin 0 40px
+			flex 0 0 340px
+			text-align center
+			margin 0
+		&-text
+			flex 0 0 340px
+			margin 0
+			padding 20px
+			box-sizing border-box
 			text-align center
 			font-weight 400
 			&-button
@@ -84,7 +87,7 @@ h3
 				cursor: pointer
 
 	&-slogan
-		margin 45px 0
+		margin 50px 0
 		text-align center
 		font-weight: 300
 		font-size 2.7em

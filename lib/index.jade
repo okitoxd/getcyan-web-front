@@ -6,7 +6,7 @@ html(lang="es")
 		link(href='/static/css/app.css', rel='stylesheet')
 	body
 		nav.nav
-			span.nav-getcyan: a(href="#header").nav-linkItem GetCyan
+			span.nav-getcyan: a(href="/").nav-linkItem GetCyan
 			ul.nav-lista
 				li.nav-item: a(href="#services").nav-linkItem Servicios
 				li.nav-item: a(href="#jobs").nav-linkItem Nuestros trabajos
@@ -14,29 +14,31 @@ html(lang="es")
 				li.nav-item: a(href="#contact").nav-linkItem Contacto
 		header.header#header
 			div.header-front
-				div.header-front-left
-					img(src="/static/img/responsive.png")
+				div.header-front-text
+					h2 DESARROLLO WEB PROFESIONAL
 				div.header-front-logo
 					img(src="/static/img/logo.png")
-				div.header-front-right
-					h3 Desarrollo de aplicaciones y sistemas web.
-					input.header-front-right-button(type="button" url="#contact" value="Contacto")
+				div.header-front-text
+					h2 Hagamos un espacio en internet para ti
+					input.header-front-text-button(type="button" url="#contact" value="Contacto")
 			h2.header-slogan "Disfrutamos nuestro arte, amamos la tecnologia"
 		section.services#services
 			div.services-item
-				h2 Diseño
+				h3 Diseño
 				p Estamos inmersos en una buena experiencia de usuario, tenemos el arte en nuestras manos.
 			div.services-item
-				h2 Desarrollo
+				h3 Desarrollo
 				p Pensamos, analisamos y actuamos. Somos desarrolladores de nuevas tecnologias natos.
 			div.services-item
-				h2 Soporte
+				h3 Soporte
 				p Nuestros servicios son completos, damos soporte a cualquier equipo o tecnología que lo requiera.
+		section.services
+
 		section.jobs#jobs
 			ul.jobs-lista
-				li.jobs-item: a.jobs-item-label-link(href="http://entrevistarte.com", target="_blank"): h2.jobs-item-label entrevistarte.com
-				li.jobs-item: a.jobs-item-label-link(href="#", target="_blank"): h2.jobs-item-label link peru.com
-				li.jobs-item: a.jobs-item-label-link(href="#", target="_blank"): h2.jobs-item-label link getcyanio.com
+				li.jobs-item: a.jobs-item-label-link(href="http://entrevistarte.com", target="_blank"): h3.jobs-item-label entrevistarte.com
+				li.jobs-item: a.jobs-item-label-link(href="#", target="_blank"): h3.jobs-item-label swknu.com
+				li.jobs-item: a.jobs-item-label-link(href="#", target="_blank"): h3.jobs-item-label getcyanio.com
 		section.contact#contact
 			form.contact-formulario
 				div.contact-formulario-item
@@ -52,7 +54,7 @@ html(lang="es")
 					h4.contact-formulario-label Consulta
 					textarea.contact-formulario-input(rows="8")
 				div.contact-formulario-item
-					input.header-front-right-button(type="button" value="Enviar")
+					input.header-front-text-button(type="button" value="Enviar")
 			div.contact-redes
 				h2.contact-redes-label Nuestras redes sociales
 				ul.contact-redes-lista
@@ -63,8 +65,6 @@ html(lang="es")
 					p.contact-redes-parrafo Av. Abraham Valdelomar Mz. E Lt. 31
 					div.contact-redes-mapa
 				h3.contact-redes-telefono 931512718
-
-				
 
 		footer.footer
 			p.footer-parrafo Derechos reservados. GetCyan.io
