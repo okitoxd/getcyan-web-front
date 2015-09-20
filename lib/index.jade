@@ -2,11 +2,13 @@
 html(lang="es")
 	head
 		meta(charset="UTF-8")
-		title GetCyan | GetCyan
+		title GetCyan | Desarrolladora web
 		link(href='/static/css/app.css', rel='stylesheet')
+		script(type='text/javascript' src="//code.jquery.com/jquery-1.11.3.min.js")
+		script(type='text/javascript' src="/static/js/main.js")
 	body
 		nav.nav
-			span.nav-getcyan: a(href="/").nav-linkItem GetCyan
+			span.nav-getcyan: a(href="#").nav-linkItem GetCyan
 			ul.nav-lista
 				li.nav-item: a(href="#services").nav-linkItem Servicios
 				li.nav-item: a(href="#jobs").nav-linkItem Nuestros trabajos
@@ -32,8 +34,16 @@ html(lang="es")
 			div.services-item
 				h3 Soporte
 				p Nuestros servicios son completos, damos soporte a cualquier equipo o tecnología que lo requiera.
-		section.services
-
+		section.types
+			div.types-content
+					h4.types-titulo Sitios informativos
+					p.types-parrafo Si deseas un sitio basico, solo para informar a tus clientes de tu negocio o personentes de tu negocio o personentes de tu negocio o persona. 
+					h4.types-titulo Blogs personalizados
+					p.types-parrafo Si deseas unentes de tu negocio o personentes de tu negocio o person, solo para informar a tus clientes de tu negocio o persona. 
+					h4.types-titulo Sistemas y aplicaciones web
+					p.types-parrafo Si deseas un sitio basico, solo para informentes de tu negocio o personar a tus clientes de tu negocio o persona. 
+					h4.types-titulo Marcas personales
+					p.types-parrafo Si deseas un sitio basico, solo para ientes de tu negocio o personentes de tu negocio o personentes de tu negocio o personnformar a tus clientes de tu negocio o persona. 
 		section.jobs#jobs
 			ul.jobs-lista
 				li.jobs-item: a.jobs-item-label-link(href="http://entrevistarte.com", target="_blank"): h3.jobs-item-label entrevistarte.com
@@ -58,8 +68,8 @@ html(lang="es")
 			div.contact-redes
 				h2.contact-redes-label Nuestras redes sociales
 				ul.contact-redes-lista
-					li.contact-redes-lista-item: a(href="#", target="_blank"): img(src="/static/img/facebook.png", alt="")
-					li.contact-redes-lista-item: a(href="#", target="_blank"): img(src="/static/img/twitter.png", alt="")
+					li.contact-redes-lista-item: a(href="http://www.facebook.com/getcyan", target="_blank"): img(src="/static/img/facebook.png", alt="")
+					li.contact-redes-lista-item: a(href="http://www.twitter.com/getcyan", target="_blank"): img(src="/static/img/twitter.png", alt="")
 					li.contact-redes-lista-item: a(href="#", target="_blank"): img(src="/static/img/youtube.png", alt="")
 				h2.contact-redes-label Otras formas
 					p.contact-redes-parrafo Av. Abraham Valdelomar Mz. E Lt. 31
